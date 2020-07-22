@@ -222,7 +222,7 @@ int main()
 	matrices.push_back(outlineBlur);
 
 	Image image;
-	if (!image.loadFromFile("pict.png"))
+	if (!image.loadFromFile("pict.jpg"))
 		throw;
 
 	Image result;
@@ -239,7 +239,7 @@ int main()
 		result.copy(tile, i * image.getSize().x, 2 * image.getSize().y);
 	}
 
-	if (!result.saveToFile("result.png"))
+	if (!result.saveToFile("result.jpg"))
 		throw;
 
 	return 0;
